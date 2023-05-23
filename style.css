@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html,
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+ /********* header ********/
+
+
+.color-bg{
+    background-color: #333333;
+}
+.color-text{
+    color: #DFB88B;
+}
+.fo-s{
+    font-size: 24px;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+	left: 0;
+    z-index: 11;
+    position: relative;
+}
+.home{
+    width: 100px;
+}
+.logo{
+    padding-top:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.btn {   
+    border: 0;
+}
+.m-l{
+    margin-left: 80px;
+}
+.m-r{
+    margin-right: 80px;
+}
+.m-auto{
+    margin: 0 auto;
+}
+
+/********* menu show ********/
+
+
+/* menu show left */
+
+.flex{
+    display: flex;
+}
+.close{
+    float: right;
+    margin-right: 10px;
+}
+.List{
+    width: 50%;
+   
+}
+.List-img{
+    width: 120px;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+ul a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.p-d{
+    padding: 20px;
+}
+.Close{
+    margin-top: 50px;
+}
+
+/* menu show right */
+.Background{
+    width: 50%;
+    position: relative;
+}
+.icon-home{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    font-size: 40px;
+    border-radius: 50%;
+}
+.icon-home a{
+    color: white;
+}
+.modal{ 
+    display: none;
+}
+.modal.show {
+    display: block;
+}
+
+.baner img{
+    width: 100%;
+    height: 500px;
+}
+
+
+/* *****MAIN ******* */
+
+
+
+/* *****slick ***** */
+
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+.slick-next{
+    right: 3%;
+}
+.slick-prev{
+    left: 3%;
+}
+
+
+/* ********text content********** */
+
+.text {  
+    width: 800px;
+}
+
+.txt-center{
+    text-align: center;
+}
+.txt-h2{
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+.container-text .txt-p{
+    letter-spacing: 3px;
+}
+.media{
+    display: grid;
+    grid-template: auto / 50% 1fr;
+}
+.gird-g{
+    grid-gap: 20px;
+}
+.text2 {
+    background-color: #292929;
+}
+.color-w{
+    color: white;
+}
+.p-d5{
+    padding: 50px;
+}
+.Dg-text{
+    width: 1000px;
+    font-size: 14px;
+}
+.DG-item{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+.f-s{
+    font-size: 14px;
+}
+
+ /******** sdile slick *******/
+
+
+ .multiple-items{
+    padding: 50px 0px;
+    
+ }
+.itemK {
+    width: 450px;
+    height: 250px;
+    margin: 0px 20px;
+    background-size: cover;
+}
+
+
+
+
