@@ -16,7 +16,9 @@ Main = document.querySelector('main')
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1000,
+    prevArrow: '<span class="fa fa-angle-left prev"></span>',
+    nextArrow: '<span class="fa fa-angle-right next"></span>'
     
   });
  
@@ -26,4 +28,11 @@ $('.multiple-items').slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 1500,
+  prevArrow: '<span class="fa fa-angle-left prev"></span>',
+  nextArrow: '<span class="fa fa-angle-right next"></span>'
 });
+
+
+/////////////////  TKbietthu //////////////////
+
+

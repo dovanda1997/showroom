@@ -1,0 +1,68 @@
+.TK-banner{
+    width: 100%;
+    height: 100vh;
+}
+.grid{
+    display: grid;
+    grid-template: auto / 50% 1fr;
+}
+.infomationTK-item{
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+}
+.infomationTK-text{
+    width: 450px;
+    margin: 15% auto;
+    
+}
+.l-s{
+    letter-spacing: 3px;
+}
+.b-k{
+    background-color: #E0DFDD;
+}
+.model{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+.grid-gap{
+    grid-gap: 20px;
+}
+.grid a{
+    text-decoration: none;
+    color: black;
+}
+.modelHeading{
+    font-size: 20px;
+    padding: 30px;
+}
+.contact-item{
+    width: 100%;
+}
+.contact-item form{
+    width: 90%;
+    margin: 50px auto;
+}
+.contact-item iframe{
+    width: 100%;
+}
+.contact-item p{
+    font-size: 32px;
+    letter-spacing: 3px;
+    padding: 20px;
+}
+form input{
+    padding: 10px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    border: 1px solid white;
+    background-color: #1F0F07;
+    color: white;
+}
+form button{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+}
