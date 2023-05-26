@@ -219,11 +219,21 @@ ul li{
     width: 60%;
     margin: 50% auto;
 }
+.tex{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
 .imgShowrom{
     width: 80%;
     height: 750px;
     background-size: cover;
+   
 }
+
 
 /* *********sample***** */
  .sample{
@@ -235,7 +245,7 @@ ul li{
 }
 .sample-item{
     width: 360px;
-    height: 420px;
+    height: 500px;
     border: 1px solid #7A7A7A;
  }
  .sample-item_img {
@@ -251,8 +261,11 @@ ul li{
     color: black;
 }
 .btnSample{
-    padding: 5px;
+    padding: 10px 30px;
     border: 0;
+    border: 1px solid #7A7A7A;
+    background-color: #F1EADA;
+    border-radius: 50px;
 }
 
 /********** footer *********/

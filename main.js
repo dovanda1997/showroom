@@ -34,5 +34,15 @@ $('.multiple-items').slick({
 
 
 /////////////////  TKbietthu //////////////////
+ Question =  document.querySelectorAll('li.question')
+ showQ =  document.querySelector('.reply')
+ 
+ for(item of Question){
+   item.addEventListener('click', function(){
+    
+   })
+  }
+
+ 
 
 

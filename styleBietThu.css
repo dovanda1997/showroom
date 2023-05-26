@@ -47,22 +47,99 @@
 }
 .contact-item iframe{
     width: 100%;
+    height: -webkit-fill-available;
 }
 .contact-item p{
     font-size: 32px;
     letter-spacing: 3px;
     padding: 20px;
 }
-form input{
+.form-infomation{
+    display: flex;
+    justify-content: space-between;
+}
+.form input{
     padding: 10px;
-    margin-right: 7px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     border: 1px solid white;
     background-color: #1F0F07;
     color: white;
 }
-form button{
+.form button{
     width: 100%;
     padding: 10px;
     border: 0;
+}
+textarea{
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    background-color: #1F0F07;
+    color: white;
+}
+label{
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+}
+
+/************* nội thât biệt thự *************/
+
+.grid6-3{
+    display: grid;
+    grid-template: auto / 60% 1fr;
+    height: 600px;
+}
+.grid3-6{
+    display: grid;
+    grid-template: auto / 1fr 60%;
+    height: 600px;
+}
+.backNoiThat{
+    width: 100%;
+    background-size: cover;
+}
+.txt-heading{
+    font-size: 20px;
+}
+.center{
+    width: 360px;
+    margin: 0 auto;
+}
+.l-h{
+    line-height: 24px;
+}
+.txt-center button{
+    margin: 30px 0px;
+    padding: 5px 30px;
+    border-radius: 50px;
+    background-color: #F1EADA;
+    border: 0;
+    border: 1px solid black;
+    letter-spacing: 1px;
+}
+
+/*********** câu hỏi *************/
+
+.ques{
+    width: 700px;
+    margin: 0 auto;
+}
+.ques ul li{
+    padding: 20px;
+    font-size: 20px;
+}
+.ques ul{
+margin-top: 20px;
+}
+.reply{
+    padding: 20px 0px;
+}
+.reply.showR{
+    display: block;
+}
+.reply-bk{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
 }
