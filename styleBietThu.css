@@ -132,8 +132,10 @@ label{
 .ques ul{
 margin-top: 20px;
 }
+
 .reply{
     padding: 20px 0px;
+    display: none;
 }
 .reply.showR{
     display: block;

@@ -35,13 +35,13 @@ $('.multiple-items').slick({
 
 /////////////////  TKbietthu //////////////////
  Question =  document.querySelectorAll('li.question')
- showQ =  document.querySelector('.reply')
  
- for(item of Question){
-   item.addEventListener('click', function(){
-    
-   })
-  }
+ Question.forEach(e => {
+   e.addEventListener('click',function(){
+    show = e.querySelector('.reply')
+    show.classList.toggle('showR')
+  })
+});
 
  
 
