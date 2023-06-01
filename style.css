@@ -304,3 +304,40 @@ footer{
     color: white;
     text-align: center;
 }
+
+.video{
+    padding: 10px;
+}
+.DG-Vision{
+    position: relative;
+}
+.DG-Vision a{
+    float: right;
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none;
+}
+.showVideo{
+    width: 800px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.showVideo.showV {
+    display: block;
+}
+
+.itemK-show{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    display: none;
+    margin: 0 auto;
+}
+.itemK-show.showK {
+    display: block;
+}

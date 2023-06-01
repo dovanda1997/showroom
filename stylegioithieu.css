@@ -2,14 +2,24 @@
     width: 1200px;
     margin: 0 auto;
 }
+main{
+    background-color: rgba(0, 0, 0, 0.5);
+}
 .form input{
     padding: 10px;
     margin: 10px 0px;
+    border: 1px solid white;
+    background-color: black;
 }
 .form button{
     width: 100%;
    padding: 10px;
    margin: 30px 0px;
+}
+.form{
+    margin-top: 20px;
+    background-color: black;
+    padding: 20px;
 }
 .form p{
     font-size: 32px;
@@ -22,4 +32,14 @@ textarea{
     width: 100%;
     resize: none;
     padding: 10px;
+    background-color: black;
+}
+.LH-heading{
+    width: 85%;
+    margin: 30px 0px;
+    letter-spacing: 3px;
+    color: white;
+}
+.LH-heading_title{
+
 }
