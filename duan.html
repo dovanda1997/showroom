@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="/duan.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header class="d-f margin">
         <div class="icon">
-            <span><i class="fab fa-pinterest"></i></span>
-            <span><i class="fab fa-youtube"></i></span>
-            <span><i class="fab fa-instagram"></i></span>
-            <span><i class="fab fa-facebook-f"></i></span>
+            <span><i class="cursor fab fa-pinterest"></i></span>
+            <span><i class="cursor fab fa-youtube"></i></span>
+            <span><i class="cursor fab fa-instagram"></i></span>
+            <span><i class="cursor fab fa-facebook-f"></i></span>
         </div>
         <div class="Close">
-            <a href="/index.html" class="color-w">Close <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>    </a>
+            <a href="/index.html" class="color-w">Close <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
+            </a>
         </div>
     </header>
     <main>
@@ -28,33 +31,59 @@
                 <p class="l-s" style="margin-bottom: 50px;">DỰ ÁN NỔI BẬT</p>
             </span>
             <section class="grid grid-template">
-                <div class="item" style="background-image: url(/image/BTgirl1.jpg);">
+                <div class="cursor item" style="background-image: url(/image/BTgirl1.jpg);">
                     <p>THIẾT KẾ BIỆT THỰ</p>
+                    <div class="overlay"></div>
                 </div>
-                <div class="item" style="background-image: url(/image/BTgirl2.jpg);">
+                <div class="cursor item" style="background-image: url(/image/BTgirl2.jpg);">
                     <P>THIẾT KẾ CHUNG CƯ</P>
+                    <div class="overlay"></div>
                 </div>
-                <div class="item" style="background-image: url(/image/BTgirl3.jpg);">
+                <div class="cursor item" style="background-image: url(/image/BTgirl3.jpg);">
                     <P>THIẾT KẾ KHÁC</P>
+                    <div class="overlay"></div>
                 </div>
             </section>
             <span>
                 <p class="l-s margin_t-l">THIẾT KẾ NỘI THẤT</p>
             </span>
             <div class="grid grid-template grid-gap">
-                <div class="item1">
+                <div class="cursor item1">
                     <p>VINHOME GREEN BAY</p>
-                </div> <div class="item1"><p>PENTHOUSE</p></div>
-                <div class="item1"><p>HÀ NỘI</p></div>
-                 <div class="item1"><p>VINHOME RIVERSIZE</p></div>
-                <div class="item1"><p>PARK CITY HÀ NỘI</p></div>
-                 <div class="item1"><p>HẢI PHÒNG</p></div>
-                <div class="item1"><p>VINHOME  THE HAMOLY</p></div>
-                 <div class="item1"><p>STAR LAKE TÂY HỒ</p></div>
-                <div class="item1"><p>THÁI NGHUYÊN</p></div>
-                 <div class="item1"><p>VINHOME GARDENIA</p></div>
-                <div class="item1"><p>CHUNG CƯ</p></div>
-                 <div class="item1"><p>DỰ ÁN KHÁC</p></div>  
+                </div>
+                <div class="cursor item1">
+                    <p>PENTHOUSE</p>
+                </div>
+                <div class="cursor item1">
+                    <p>HÀ NỘI</p>
+                </div>
+                <div class="cursor item1">
+                    <p>VINHOME RIVERSIZE</p>
+                </div>
+                <div class="cursor item1">
+                    <p>PARK CITY HÀ NỘI</p>
+                </div>
+                <div class="cursor item1">
+                    <p>HẢI PHÒNG</p>
+                </div>
+                <div class="cursor item1">
+                    <p>VINHOME THE HAMOLY</p>
+                </div>
+                <div class="cursor item1">
+                    <p>STAR LAKE TÂY HỒ</p>
+                </div>
+                <div class="cursor item1">
+                    <p>THÁI NGHUYÊN</p>
+                </div>
+                <div class="cursor item1">
+                    <p>VINHOME GARDENIA</p>
+                </div>
+                <div class="cursor item1">
+                    <p>CHUNG CƯ</p>
+                </div>
+                <div class="cursor item1">
+                    <p>DỰ ÁN KHÁC</p>
+                </div>
             </div>
             <div>
                 <span style="text-align: center;">
@@ -62,25 +91,40 @@
                 </span>
                 <div class="from">
                     <div class="flex">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
+                        <label for="">Tên quý khách
+                            <input type="text" placeholder="Tên của quý khách">
+                        </label>
+                        <label for="">Số điện thoại
+                            <input type="text" placeholder="Số điện thoại">
+                        </label>
+                        <label for="">Email
+                            <input type="text" placeholder="Email">
+                        </label>
                     </div>
                     <div>
-                        <input style="width: 100%;" type="text">
+                        <label for="">Địa chỉ                            
+                            <input style="width: 100%;" type="text" placeholder="Địa chỉ khu vực, vị trí">
+                        </label>
                     </div>
                     <div class="text-area">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <label for="">Nội dung liên hệ
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Nội dung liên hệ "></textarea>
+                        </label>
                     </div>
-                    <div  class="margin_t-l" style="display: flex; justify-content: space-between; align-items: center;" >
+                    <div class="margin_t-l" style="display: flex; justify-content: space-between; align-items: center;">
                         <div style="display: flex;">
-                            <input type="checkbox"><label for=""><p>Khi thực hiện hoạt động này đồng nghĩa với việc Quý khách đã đồng ý với Quy định & Điều khoản sử dụng trên trang của chúng tôi</p></label>       
+                            <input type="checkbox"><label for="">
+                                <p>Khi thực hiện hoạt động này đồng nghĩa với việc Quý khách đã đồng ý với Quy định &
+                                    Điều khoản sử dụng trên trang của chúng tôi</p>
+                            </label>
                         </div>
-                        <button style="padding: 10px 30px;"><i aria-hidden="true" class="far fa-paper-plane"></i> Gửi đăng ký</button>
+                        <button class="cursor" style="padding: 10px 30px;"><i aria-hidden="true" class="far fa-paper-plane"></i> Gửi
+                            đăng ký</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 </body>
+
 </html>

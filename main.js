@@ -18,8 +18,8 @@ Main = document.querySelector('main')
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
-    prevArrow: '<span class="fa fa-angle-left prev"></span>',
-    nextArrow: '<span class="fa fa-angle-right next"></span>'
+    prevArrow: '<span class="cursor fa fa-angle-left prev"></span>',
+    nextArrow: '<span class="cursor fa fa-angle-right next"></span>'
     
   });
  
@@ -29,9 +29,32 @@ $('.multiple-items').slick({
   slidesToScroll: 1,
   // autoplay: true,
   // autoplaySpeed: 1500,
-  prevArrow: '<span class="fa fa-angle-left prev"></span>',
-  nextArrow: '<span class="fa fa-angle-right next"></span>'
+  prevArrow: '<span class="cursor fa fa-angle-left prev"></span>',
+  nextArrow: '<span class="cursor fa fa-angle-right next"></span>'
 });
+//  let sdile_item = [
+//   {img: '/image/sdile1.jpg'},
+//   {img: '/image/sdile2.jpg'},
+//   {img: '/image/sdile3.jpg'},
+//   {img: '/image/sdile4.jpg'},
+//   {img: '/image/sdile5.jpg'},
+//   {img: '/image/sdile6.jpg'}
+//  ];
+//  let sdile = document.querySelector('.multiple-items')
+
+//  function render_sdile(param){
+//   for(let item of param){
+//     let div = document.createElement('div');
+//     div.classList.add('itemK')
+//     div.innerHTML=`
+//     <div class="item" style="background-image: url(${item.img});" ></div>
+//     `
+//     sdile.appendChild(div)
+//   }
+//  }
+//  render_sdile(sdile_item);
+
+
 
 
 /////////////////  TKbietthu //////////////////
@@ -43,21 +66,39 @@ $('.multiple-items').slick({
     show = e.querySelector('.reply')
     quesI = e.querySelector('i')
     show.classList.toggle('showR')
+    e.classList.toggle('back')
     quesI.classList.toggle('rotate')
   })
 });
 
 
-//SHOW IMG
+// show IMG
+
 
 showIMG = document.querySelectorAll('.itemK')
-showItemK = document.querySelector('.itemK-show')
+
 showIMG.forEach(e =>{
   e.addEventListener('click',function(){
-    showimage = e.querySelector('.itemK-show')
-    showimage.classList.add('showK')
+    a = e.querySelector('.item')  
+    img_popup()
   })
 })
+
+function img_popup(){
+  let popup = document.createElement('div');
+  popup.classList.add('popup');
+  popup.innerHTML =`
+  <div class="overlay"></div>
+  <div class="content" style="background-image: url(/image/sdile1.jpg);"> 
+  
+  </div>
+  `;
+  popup.querySelector('.overlay').addEventListener('click', function() {
+    popup.remove();
+  });
+
+  document.body.appendChild(popup)
+}
 
 //ShowVideo TK biet thu
 
@@ -107,4 +148,5 @@ Videoremove.addEventListener('click', function(){
 
  
 
-
+// apen chill vafo body 
+// slick-track class clone
