@@ -1,152 +1,125 @@
-//  SHOWMENU
-menu = document.querySelector('.Menu')
-Main = document.querySelector('main')
- ShowMenu = document.querySelector('.modal')
- menu.addEventListener('click',function(){
-    ShowMenu.classList.add('show')
- });
- del =  document.querySelectorAll('.del span')
-  for(item of del){
-    item.addEventListener('click', function(){
-        ShowMenu.classList.remove('show')
-    });
-  }
-
-  // SLICK js
-  $('.autoplay').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    prevArrow: '<span class="cursor fa fa-angle-left prev"></span>',
-    nextArrow: '<span class="cursor fa fa-angle-right next"></span>'
-    
-  });
- 
-$('.multiple-items').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  // autoplay: true,
-  // autoplaySpeed: 1500,
-  prevArrow: '<span class="cursor fa fa-angle-left prev"></span>',
-  nextArrow: '<span class="cursor fa fa-angle-right next"></span>'
-});
-//  let sdile_item = [
-//   {img: '/image/sdile1.jpg'},
-//   {img: '/image/sdile2.jpg'},
-//   {img: '/image/sdile3.jpg'},
-//   {img: '/image/sdile4.jpg'},
-//   {img: '/image/sdile5.jpg'},
-//   {img: '/image/sdile6.jpg'}
-//  ];
-//  let sdile = document.querySelector('.multiple-items')
-
-//  function render_sdile(param){
-//   for(let item of param){
-//     let div = document.createElement('div');
-//     div.classList.add('itemK')
-//     div.innerHTML=`
-//     <div class="item" style="background-image: url(${item.img});" ></div>
-//     `
-//     sdile.appendChild(div)
-//   }
-//  }
-//  render_sdile(sdile_item);
 
 
+// SLICK js
+$('.autoplay').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	autoplay: true,
+	autoplaySpeed: 1000,
+	prevArrow: '<span class="cursor fa fa-angle-left prev"></span>',
+	nextArrow: '<span class="cursor fa fa-angle-right next"></span>'
 
-
-/////////////////  TKbietthu //////////////////
- Question =  document.querySelectorAll('li.question')
- 
- 
- Question.forEach(e => {
-   e.addEventListener('click',function(){
-    show = e.querySelector('.reply')
-    quesI = e.querySelector('i')
-    show.classList.toggle('showR')
-    e.classList.toggle('back')
-    quesI.classList.toggle('rotate')
-  })
 });
 
+/* ---------------------------------------------------- */
+/* start new code */
+/* ---------------------------------------------------- */
 
-// show IMG
+let slide_item = {
+	0: {
+		img: '/image/sdile1.jpg'
+	},
+	1: {
+		img: '/image/sdile2.jpg'
+	},
+	2: {
+		img: '/image/sdile3.jpg'
+	},
+	3: {
+		img: '/image/sdile4.jpg'
+	},
+	4: {
+		img: '/image/sdile5.jpg'
+	},
+	5: {
+		img: '/image/sdile6.jpg'
+	}
+};
 
+function create_popup_home_slider() {
+	let slide = document.querySelector('.multiple-items');
+	if (!slide) return false;
 
-showIMG = document.querySelectorAll('.itemK')
+	function render_slide(param) {
+		for (let [k, item] of Object.entries(param)) {
+			let div = document.createElement('div');
+			div.classList.add('itemK');
+			div.setAttribute('data-id', k);
+			div.innerHTML = `
+		 <div class="item" style="background-image: url(${item.img});" ></div>
+		 `;
 
-showIMG.forEach(e =>{
-  e.addEventListener('click',function(){
-    a = e.querySelector('.item')  
-    img_popup()
-  })
-})
+			slide.appendChild(div)
+		}
+	}
+	render_slide(slide_item);
 
-function img_popup(){
-  let popup = document.createElement('div');
-  popup.classList.add('popup');
-  popup.innerHTML =`
-  <div class="overlay"></div>
-  <div class="content" style="background-image: url(/image/sdile1.jpg);"> 
-  
-  </div>
-  `;
-  popup.querySelector('.overlay').addEventListener('click', function() {
-    popup.remove();
-  });
+	$('.multiple-items').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		// autoplay: true,
+		// autoplaySpeed: 1500,
+		prevArrow: '<span class="cursor fa fa-angle-left prev"></span>',
+		nextArrow: '<span class="cursor fa fa-angle-right next"></span>'
+	});
 
-  document.body.appendChild(popup)
+	document.querySelectorAll('.multiple-items .itemK').forEach(function (item) {
+		item.addEventListener('click', function () {
+			let key = item.getAttribute('data-id');
+			img_popup(slide_item[key]['img']);
+		});
+	});
+
+	// show IMG
+
+	function img_popup(img) {
+		let popup = document.createElement('div');
+		popup.classList.add('popup');
+		popup.innerHTML = `
+		<div class="overlay"></div>
+		<div class="content" style="background-image: url(${img});"> 
+
+		</div>
+		`;
+		popup.querySelector('.overlay').addEventListener('click', function () {
+			popup.remove();
+		});
+
+		document.body.appendChild(popup);
+	}
 }
+create_popup_home_slider();
+/* ---------------------------------------------------- */
+/* end new code */
+/* ---------------------------------------------------- */
 
-//ShowVideo TK biet thu
-
-
-showVideoTK = document.querySelectorAll('.showVideoTK')
-showF =  document.querySelector('.showTK')
-console.log(showF)
-showVideoTK.forEach(e=>{
-  e.addEventListener('click', function(){
-    del = e.querySelector('button')  
-    s = e.querySelector('.showTK')  
-    s.classList.add('showT')
-    del.addEventListener('click', function(){
-      s.classList.add('remove')
-    })
-  })
-})
 
 // slickTK BIET THƯ 
 
 $('.single-item').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  prevArrow: '<span class="fa fa-angle-left prev"></span>',
-  nextArrow: '<span class="fa fa-angle-right next"></span>'
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	prevArrow: '<span class="fa fa-angle-left prev"></span>',
+	nextArrow: '<span class="fa fa-angle-right next"></span>'
 });
-
-// remoTK = document.querySelectorAll('.showVideoTK button')
-// remoTK.forEach(e=>{
-//   e.addEventListener('click', function(){
-//     showF.classList.remove('showT')
-//   })
-// })
 
 
 // SHOW VIDEO
 
-videoS = document.querySelector('.video')
-showVideo =  document.querySelector('.showVideo')
-videoS.addEventListener('click', function(){
-  showVideo.classList.add('showV')
-} )
-Videoremove = document.querySelector('.Videoremove')
-Videoremove.addEventListener('click', function(){
-  showVideo.classList.remove('showV')
-})
+function hander_video() {
+	videoS = document.querySelector('.video')
+	if (!videoS) return false;
+	showVideo = document.querySelector('.showVideo')
+	videoS.addEventListener('click', function () {
+		showVideo.classList.add('showV')
+	})
+	Videoremove = document.querySelector('.Videoremove')
+	Videoremove.addEventListener('click', function () {
+		showVideo.classList.remove('showV')
+	})
+}
+hander_video()
 
- 
-
-// apen chill vafo body 
+// apen chill vafo body
 // slick-track class clone

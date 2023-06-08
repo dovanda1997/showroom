@@ -86,11 +86,16 @@ label{
     margin: 50px 0px;
 }
 .item1{
-    width: 400px;
     height: 60px;
     background-color: #1F0F07;
     border: 1px solid #423E35;
     position: relative;
+    border-radius: 10px;
+}
+.item1:hover{
+    background-color: #69645e;
+    transition: 2s;
+    color: #423E35;
 }
 .item1 p{
     position: absolute;
@@ -98,7 +103,9 @@ label{
     left: 50%;
     transform: translate(-50% ,-50%);
     font-weight: 600;
+    color: #D4B88B;
 }
+
 .grid-gap{
     grid-gap: 15px;
 }
@@ -119,3 +126,9 @@ textarea{
     padding: 10px;
     resize: none;
 } 
+label{
+    margin-bottom: 5px;
+}
+.m-t{
+    margin-top: 5px;
+}

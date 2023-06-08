@@ -200,4 +200,28 @@ margin-top: 20px;
 .removeTK{
     padding: 5px;
 }
+.m-t5{
+    margin-top: 5px;
+}
 
+.popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup .content {
+    position: relative;
+    z-index: 1111;
+    border-radius: 16px;
+    padding: 16px;
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+    background-size: cover;
+}
