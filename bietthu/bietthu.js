@@ -1,7 +1,5 @@
 /////////////////  TKbietthu //////////////////
 
-
-
 Question = document.querySelectorAll('li.question')
 Question.forEach(e => {
     e.addEventListener('click', function () {  
@@ -49,53 +47,48 @@ let itemtk = [
         heading: 'THIẾT KẾ NỘI THẤT BIỆT THỰ TẠI THÁI NGUYÊN'
     }
 ]
-
-function popup_slider() {
+function render_slideeee(param) {
     let slideTK = document.querySelector('.position');
     if (!slideTK) return false;
-
-    function render_slide(param) {
-        for (item of param) {
-            let div = document.createElement('div');
-            div.classList.add('showVideoTK');
-            div.innerHTML = `
-            <div>
+    for (let item of param) {
+        console.log(item)
+        let div = document.createElement('div');
+        div.classList.add('showVideoTK');
+        div.innerHTML = `
+        <div>
             <div class="model" style="background-image: url(${item.img});"></div>
             <p class="modelHeading">${item.heading}</p>
         </div>
-		 `;
-
-            slideTK.appendChild(div)
-        }
-
-        tk = document.querySelectorAll('.showVideoTK .model')
-       for (item of tk ){
-        item.addEventListener('click', function(){
-            console.log(item)
+        `;
+        div.addEventListener('click', function(){
+            console.log(item.img)
+            img_popup()
+            
         })
-       }
+        slideTK.appendChild(div)
     }
-    render_slide(itemtk);
 
-
-
-    // function img_popup() {
-    //     let popup = document.createElement('div');
-    //     popup.classList.add('popup');
-    //     popup.innerHTML = `
-	// 	<div class="overlay"></div>
-	// 	<div class="content"> 
-    //         f
-	// 	</div>
-	// 	`;
-    //     popup.querySelector('.overlay').addEventListener('click', function () {
-    //         popup.remove();
-    //     });
-
-    //     document.body.appendChild(popup);
-    // }
 }
-popup_slider();
+render_slideeee(itemtk);
+
+ 
+    function img_popup() {
+        let popup = document.createElement('div');
+        popup.classList.add('popup');
+        popup.innerHTML = `
+		<div class="overlay"></div>
+		<div class="sdile"> 
+            f
+		</div>
+		`;
+        popup.querySelector('.overlay').addEventListener('click', function () {
+            popup.remove();
+        });
+
+        document.body.appendChild(popup);
+    }
+
+
 
 
 let iteS = [

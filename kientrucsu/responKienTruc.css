@@ -1,0 +1,99 @@
+
+.mediaG {
+    display: grid;
+    max-width: 80%;
+}
+.KT-img{
+    height: 200px;
+}
+.KT-heading{
+    font-size: 14px;
+}
+.KT-title{
+    font-size: 24px;
+}
+.heading-KT{
+    font-size: 12px;
+}
+.TK-banner{
+    height: 50vh;
+}
+.heading-baner{
+    font-size: 20px;
+    top: 40%;
+}
+.ored-heading{
+    order: 0;
+}
+.ored-item{
+    order: -1;
+}
+
+
+
+@media (min-width: 1200px) {
+    .mediaG {
+        display: grid;
+        grid-template: auto / 1fr 1fr;
+    }
+    
+    .ored-heading{
+        order: -1;
+    }
+    .ored-item{
+        order: 0;     
+    } 
+.heading-KT{
+    font-size: 14px;
+}
+.KT-heading{
+    font-size: 16px;
+}    
+.TK-banner{
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    /* object-fit: cover */
+}
+.heading-baner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: white;
+    font-size: 32px;  
+}
+.KT-container{
+    max-width: 85%;
+    margin: 0 auto;
+}
+.heading-KT{
+    letter-spacing: 3px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    padding-right: 20px;
+}
+.KT-title{
+    margin: 30px 0px;
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+.grid-gap{
+    grid-gap: 20px;
+    margin: 30px 0px;
+}
+.KT-item-use{
+   border: 1px solid #A0A0A0;
+}
+.KT-img{
+    height: 80%;
+    background-color: brown;
+}.KT-heading{
+    text-align: center;
+}
+}

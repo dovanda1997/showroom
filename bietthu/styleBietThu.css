@@ -17,21 +17,18 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, .4);
-    width: 100%;
-    height: 100vh;  
+    background: rgba(0, 0, 0, .4); 
+    z-index: 1;
 }
 .grid{
     display: grid;
-    grid-template: auto / 50% 1fr;
+    grid-template: auto / 1fr 1fr;
 }
 .infomationTK-item{
-    height: 400px;
-    width: 100%;
     background-size: cover;
 }
 .infomationTK-text{
-    width: 450px;
+    max-width: 80%;
     margin: 15% auto;
     
 }
@@ -41,11 +38,7 @@
 .b-k{
     background-color: #E0DFDD;
 }
-.model{
-    width: 100%;
-    height: 400px;
-    background-size: cover;
-}
+
 .grid-gap{
     grid-gap: 20px;
 }
@@ -53,13 +46,8 @@
     text-decoration: none;
     color: black;
 }
-.modelHeading{
-    font-size: 20px;
-    padding: 30px;
-}
-.contact-item{
-    width: 100%;
-}
+
+
 .contact-item form{
     width: 90%;
     margin: 50px auto;
@@ -74,11 +62,12 @@
     padding: 20px;
 }
 .form-infomation{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template: auto/ 1fr 1fr 1fr;
+    grid-gap: 20px;
 }
 .form input{
-    padding: 10px 10px 10px 0px;
+    padding: 10px;
     margin-bottom: 10px;
     border: 1px solid white;
     background-color: #1F0F07;
@@ -104,25 +93,15 @@ label{
 
 /************* nội thât biệt thự *************/
 
-.grid6-3{
-    display: grid;
-    grid-template: auto / 60% 1fr;
-    height: 600px;
-}
+
 .grid3-6{
     display: grid;
     grid-template: auto / 1fr 60%;
     height: 600px;
 }
-.backNoiThat{
-    width: 100%;
-    background-size: cover;
-}
-.txt-heading{
-    font-size: 20px;
-}
+
+
 .center{
-    width: 360px;
     margin: 0 auto;
 }
 .l-h{
@@ -140,14 +119,8 @@ label{
 
 /*********** câu hỏi *************/
 
-.ques{
-    width: 700px;
-    margin: 0 auto;
-}
-.ques ul li{
-    padding: 20px;
-    font-size: 20px;
-}
+
+
 .ques ul{
 margin-top: 20px;
 }
@@ -214,7 +187,7 @@ margin-top: 20px;
     align-items: center;
     justify-content: center;
 }
-.popup .content {
+/* .popup .content {
     position: relative;
     z-index: 1111;
     border-radius: 16px;
@@ -224,4 +197,18 @@ margin-top: 20px;
     background: #fff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
     background-size: cover;
+} */
+.popup .sdile{
+    position: relative;
+    z-index: 1111;
+    border-radius: 16px;
+    padding: 16px;
+    width: 700px;
+    height: 500px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+    background-size: cover;
+    top: 43%;
+    transform: translate(0, -43%);
+
 }
