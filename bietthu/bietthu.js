@@ -51,18 +51,16 @@ function render_slideeee(param) {
     let slideTK = document.querySelector('.position');
     if (!slideTK) return false;
     for (let item of param) {
-        console.log(item)
         let div = document.createElement('div');
         div.classList.add('showVideoTK');
         div.innerHTML = `
         <div>
             <div class="model" style="background-image: url(${item.img});"></div>
             <p class="modelHeading">${item.heading}</p>
-        </div>
+            </div>  
         `;
         div.addEventListener('click', function(){
-            console.log(item.img)
-            img_popup()
+            img_popup(item)
             
         })
         slideTK.appendChild(div)
@@ -70,23 +68,49 @@ function render_slideeee(param) {
 
 }
 render_slideeee(itemtk);
-
- 
-    function img_popup() {
+  
+    function img_popup(item) {
         let popup = document.createElement('div');
         popup.classList.add('popup');
         popup.innerHTML = `
 		<div class="overlay"></div>
 		<div class="sdile"> 
-            f
-		</div>
-		`;
-        popup.querySelector('.overlay').addEventListener('click', function () {
-            popup.remove();
-        });
+        <h2>${item.heading}</h2>
+        <img src="${item.img}" alt="">   
 
-        document.body.appendChild(popup);
-    }
+        </div>	
+		`;
+        $('.single-item').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: '<span class="fa fa-angle-left prev"></span>',
+            nextArrow: '<span class="fa fa-angle-right next"></span>'
+          
+          });
+
+       
+       
+    //    let sdile = popup.querySelector('.sdile')
+    //   let divSdile = document.createElement('div')
+    //   divSdile.classList.add('single-item')
+    //   divSdile.innerHTML = `
+    //   <div>1</div>
+    //   <div>2</div>
+    //   <div>3</div>
+    //   <div>4</div>
+    //   `
+    //   sdile.appendChild(divSdile)
+    
+    
+    
+    popup.querySelector('.overlay').addEventListener('click', function () {
+        popup.remove();
+    });
+    
+    document.body.appendChild(popup);
+}
+
+
 
 
 
@@ -115,7 +139,7 @@ function showNoiThat() {
     if (!sVIDEO) return false;
 
     function render_slide(param) {
-        for (item of param) {
+        for (let item of param) {
             let div = document.createElement('div');
             div.classList.add('txt-center');
             div.innerHTML = `
@@ -125,9 +149,15 @@ function showNoiThat() {
             </div>
 		 `;
 
+         div.addEventListener('click', function(){
+          
+             img_popup(item)
+             
+           
+         })
             sVIDEO.appendChild(div)
         }
-
+       
     }
     render_slide(iteS)
 }

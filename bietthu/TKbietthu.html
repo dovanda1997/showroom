@@ -10,23 +10,25 @@
     <link rel="stylesheet" href="/bietthu/styleBietThu.css">
     <link rel="stylesheet" href="/animation.css">
     <link rel="stylesheet" href="/bietthu/responBietThu.css">
+    <link rel="stylesheet" href="/responheader.css">
+    <link rel="stylesheet" href="/responfooter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Showroom</title>
 </head>
 
 <body>
     <header>
-        
+       
         
     </header>
     <main>
         <div class="TK-banner" style="background-image: url(/image/bietthu.jpg);">
             <div class="overlay"></div>
-            <h1>Lorem ipsum dolor sit.</h1>
+            <h1>THIẾT KẾ THI CÔNG BIỆT THỰ </h1>
         </div>
-        <div class="text p-d m-auto" style="width: 1200px;">
+        <div class="textTK p-d m-auto">
             <div class="container-text">
                 <p class="txt-center txt-h2 p-d">THIẾT KẾ,THI CÔNG NỘI THẤT BIỆT THỰ</p>
                 <p class="txt-p">
@@ -42,7 +44,7 @@
             <div class="infomationTK-item" style="background-image: url(/image/BTgirl1.jpg);"></div>
             <div class="infomationTK-item b-k">
                 <div class="infomationTK-text l-s">
-                    <p class="txt-center  p-d txt-title" >THIẾT KẾ KIẾN TRÚC BIỆT THỰ</p>
+                    <p class="txt-center txt-title" >THIẾT KẾ KIẾN TRÚC BIỆT THỰ</p>
                     <p class="txt-p">
                         Đồng Gia trở thành đơn vị Tổng thầu thiết kế nội thất biệt thự
                         mang đến sự đồng bộ hóa cao nhất từ kiến trúc đến nội thất.
@@ -53,7 +55,7 @@
             </div>
             <div class="infomationTK-item b-k">
                 <div class="infomationTK-text l-s">
-                    <p class="txt-center txt-title  p-d" >THIẾT KẾ NỘI THẤT BIỆT THỰ HIỆN ĐẠI</p>
+                    <p class="txt-center txt-title " >THIẾT KẾ NỘI THẤT BIỆT THỰ HIỆN ĐẠI</p>
                     <p class="txt-p">
                         Tôn vinh sự tối giản, tinh tế và nổi bật những đường nét thiết kế sáng tạo
                         đến từ BST DG Bespoke hàng năm, những công trình mang phong cách hiện đại
@@ -66,7 +68,7 @@
             <div class="infomationTK-item" style="background-image: url(/image/BTgirl3.jpg);"></div>
             <div class="infomationTK-item b-k">
                 <div class="infomationTK-text l-s">
-                    <p class="txt-center  p-d txt-title">THIẾT KẾ NỘI THẤT BIỆT THỰ TÂN CỔ ĐIỂN</p>
+                    <p class="txt-center  txt-title">THIẾT KẾ NỘI THẤT BIỆT THỰ TÂN CỔ ĐIỂN</p>
                     <p class="txt-p">
                         Song song với việc phát triển những thế mạnh cốt lõi, đưa phong cách tân cổ điển
                         vào trong công trình là cách Đồng Gia tiếp cận và đa dạng sự lựa chọn hơn dành
@@ -77,7 +79,7 @@
             </div>
 
         </div>
-        <div class="text p-d m-auto">
+        <div class="textTK2 p-d m-auto">
             <div class="container-text">
                 <p class="txt-center txt-h2 p-d">ĐỒNG GIA - TIÊN PHONG NGHỆ THUẬT GỖ ÓC CHÓ CHO BIỆT THỰ CAO CẤP</p>
                 <p class="txt-p">
@@ -91,7 +93,7 @@
 
             </div>
         </div>
-        <div class="text p-d m-auto">
+        <div class="textTKd p-d m-auto">
             <div class="container-text">
                 <p class="txt-center txt-h2 p-d">KHÔNG GIAN SỐNG SANG TRỌNG, ĐẲNG CẤP</p>
                 <p class="txt-p f-s">
@@ -176,13 +178,14 @@
             <div class="txt-center">
                 <a href="">
                     <div class="model" style="background-image: url(/image/BTphongan.jpg);"></div>
-                    <button>Thi công nội thất biệt thự </button>
+                    <button class="btn">Thi công nội thất biệt thự </button>
                 </a>
+               
             </div>
             <div class="txt-center">
                 <a href="">
                     <div class="model" style="background-image: url(/image/BTphongngu.jpg);"></div>
-                    <button>Thi công nội thất chung cư</button>
+                    <button class="btn">Thi công nội thất chung cư</button>
                 </a>
             </div>
         </div>
@@ -369,10 +372,10 @@
                     <label  for="">Tên quý khách 
                         <input class="m-t5" type="text" placeholder="Tên của quý khách">
                     </label>
-                    <label for="">Số điện thoại
+                    <label for="">Số điện thoại liên hệ
                         <input class="m-t5" type="text" placeholder="Số điện thoại">
                     </label>
-                    <label for="">Email khách
+                    <label for="">Email của quý khách
                         <input class="m-t5" type="text" placeholder="Email">
                     </label>
                 </div>
@@ -385,7 +388,8 @@
                 <div style="display: flex; align-items: baseline;">
                     <input type="checkbox">
 
-                    <label for="">Khi thực hiện hoạt động này đồng nghĩa với việc Quý khách đã đồng ý
+                    <label for="">
+                        Khi thực hiện hoạt động này đồng nghĩa với việc Quý khách đã đồng ý
                         với Quy định & Điều khoản sử dụng trên trang của chúng tôi</label>
                 </div>
                 <button class="cursor"> <i aria-hidden="true" class="far fa-paper-plane"></i>&nbsp;Gửi Đăng Ký</button>
@@ -400,6 +404,7 @@
             </iframe>
         </div>
     </div>
+    
 
     <footer style="margin-top: 100px;">
       

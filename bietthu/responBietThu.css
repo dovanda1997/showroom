@@ -2,18 +2,22 @@
     height: 50vh;
     position: relative;
     background-size: cover;
+    background-position: center;
 }
 .TK-banner h1{
     font-size: 20px;
+    text-align: center;
 }
 .txt-h2{
-    font-size: 20px;
+    font-size: 16px;
 }
 .txt-p{
     font-size: 11px;
 }
 .txt-title{
-    font-size: 16px;
+    font-size: 12px;
+    padding: 15px 0px;
+    letter-spacing: 1px;
 }
 .grid{
     display: grid;
@@ -23,12 +27,17 @@
     background-size: cover;
     max-width: 100%;
     height: 200px;
+    background-position: center;
+    cursor: pointer;
 }
 .infomationTK-item{
      background-size: cover;
+     background-position: center;
  }
  .modelHeading{
-    font-size: 16px;
+    font-size: 11px;
+    text-align: center;
+    padding: 10px 0px;
  }
  .grid6-3{
     display: grid;
@@ -38,11 +47,10 @@
     width: 100%;
     background-size: cover;
     height: 450px;
-    margin-top: 5%;
+    background-position: center;
 }
 .txt-heading{
-    position: absolute;
-    top: 0;
+  font-size: 14px;
 }
 .txt-grid6_3{
     margin-top: 0%;
@@ -74,6 +82,56 @@
     border: 0;
     height: 450px;
 }
+.textTK{
+    max-width: 75%;
+}
+.infomationTK-text{
+    max-width: 79%;
+    margin: 5% auto; 
+}
+.popup .sdile{
+    position: relative;
+    z-index: 1111;
+    border-radius: 16px;
+    padding: 16px;
+    width: 80%;
+    height: 300px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+    background-size: cover;
+    top: 0;
+}
+.form-infomation{
+    display: grid;
+    grid-template: auto/ 1fr ;
+    grid-gap: 20px;
+}
+.form-infomation input{
+    width: 100%;
+}
+.contact-item p{
+    font-size: 24px;
+    letter-spacing: 3px;
+    padding: 20px;
+}
+.textTKd{
+    max-width: 86%;
+}
+.textTK2{
+    max-width: 90%;
+}
+.btn:hover{
+    background-color: #D4B88B;
+    color: rgb(201, 128, 33);
+}
+.sdile h2{
+    text-align: center;
+    font-size: 14px;
+}
+.sdile img{
+    width: 100%;
+    height: 240px;
+}
 
  
 
@@ -88,6 +146,7 @@
         width: 100%;
         height: 100vh;
         position: relative;
+        background-position: center;
     }
     .TK-banner h1{
         font-size: 32px;
@@ -100,18 +159,22 @@
     }
     .txt-title{
         font-size: 24px;
+        padding: 20px 0px;
     }
     .model{
         height: 400px;
         background-size: cover;
+        cursor: pointer;
     }
     .infomationTK-item{
         height: 500px;
          background-size: cover;
+         background-position: center;
      }
      .modelHeading{
         font-size: 20px;
         padding: 30px;
+        text-align: center;
     }
     .grid6-3{
         display: grid;
@@ -120,7 +183,7 @@
     .backNoiThat{
         max-width: 100%;
         background-size: cover;
-        margin-top: 0;
+        background-position: center;
     }
      .txt-heading{
         font-size: 20px;
@@ -155,6 +218,60 @@
     }
     .contact-item iframe{
         border: 0;
+    }
+    .textTK{
+        max-width: 55%;
+    }
+    .textTKd{
+        max-width: 70%;
+    }
+    .textTK2{
+        max-width: 70%;
+    }
+    .infomationTK-text{
+        max-width: 82%;
+        margin: 15% auto;
+        
+    }
+    .popup .sdile{
+        position: relative;
+        z-index: 1111;
+        border-radius: 16px;
+        padding: 16px;
+        width: 700px;
+        height: 500px;
+        background: #fff;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+        background-size: cover;
+        top: 43%;
+        transform: translate(0, -43%);
+    
+    }
+    .form-infomation{
+        display: grid;
+        grid-template: auto/ 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .contact-item p{
+        font-size: 32px;
+        letter-spacing: 3px;
+        padding: 20px;
+    }
+    .btn:hover{
+        background-color: #D4B88B;
+        color: rgb(201, 128, 33);
+    }
+    .sdile h2{
+        text-align: center;
+        padding: 20px 0px;
+        font-size: 24px;
+    }
+    .single-item{
+        display: none;
+    }
+    .sdile img{
+        width: 100%;
+        height: auto;
     }
 
     

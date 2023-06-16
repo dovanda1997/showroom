@@ -9,7 +9,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    z-index: 111; 
+    z-index: 1; 
 }
 .overlay {
     position: absolute;
@@ -27,11 +27,7 @@
 .infomationTK-item{
     background-size: cover;
 }
-.infomationTK-text{
-    max-width: 80%;
-    margin: 15% auto;
-    
-}
+
 .l-s{
     letter-spacing: 3px;
 }
@@ -56,16 +52,9 @@
     width: 100%;
     height: -webkit-fill-available;
 }
-.contact-item p{
-    font-size: 32px;
-    letter-spacing: 3px;
-    padding: 20px;
-}
-.form-infomation{
-    display: grid;
-    grid-template: auto/ 1fr 1fr 1fr;
-    grid-gap: 20px;
-}
+
+
+
 .form input{
     padding: 10px;
     margin-bottom: 10px;
@@ -123,6 +112,7 @@ label{
 
 .ques ul{
 margin-top: 20px;
+list-style: none;
 }
 
 .question i.rotate{
@@ -187,28 +177,5 @@ margin-top: 20px;
     align-items: center;
     justify-content: center;
 }
-/* .popup .content {
-    position: relative;
-    z-index: 1111;
-    border-radius: 16px;
-    padding: 16px;
-    width: 600px;
-    height: 400px;
-    background: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
-    background-size: cover;
-} */
-.popup .sdile{
-    position: relative;
-    z-index: 1111;
-    border-radius: 16px;
-    padding: 16px;
-    width: 700px;
-    height: 500px;
-    background: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
-    background-size: cover;
-    top: 43%;
-    transform: translate(0, -43%);
 
-}
+

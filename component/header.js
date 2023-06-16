@@ -1,84 +1,68 @@
 //  SHOWMENU
-
 header = document.querySelector('header')
-let divH = document.createElement('div')
-divH.classList.add('container')
-divH.innerHTML = `
-<div class="head color-bg">
-<div class="menu">
-	<span>
-		<button class=" cursor btn fo-s m-l color-text color-bg Menu"> <i class="fa-solid fa-bars"></i>
-			&nbsp;Menu</button>
-	</span>
+header.classList.add('header')
+header.innerHTML=`
+<div class="container">
+	<button class="nav-trigger">
+		<i class="fa-solid fa-bars"></i>
+		<span>Menu</span>
+	</button>
+	<a href="/index.html" class="logo"><img src="/image/logo-donggia-gold.png"></a>
+	<button class="projects">
+		<span><a href="/duan/duan.html">Dự án</a></span>
+		<i class="fa-solid fa-ellipsis-vertical"></i>
+	</button>
 </div>
-<div class="home">
-	<div class="logo img" style="background-image: url(/image/logo-donggia-gold.png);"></div>
-</div>
-<div class="project">
-	<a href="/duan.html">
-		<span><button class="btn fo-s m-r color-text color-bg Project"> <a class="color-text" href="/duan/duan.html">Dự Án</a>  &nbsp;<i
-					class="fa-solid fa-ellipsis-vertical"></i></button></span>
-	</a>
-</div>
-</div> 
-<div class="modal">
-<div class="Show-menu">
-   <div class="flex">
-	   <div class="Background">
-		   <div class="logo img" style="background-image: url(/image/backMenu.jpg);"></div>
-		   <div class="Trang chủ">
-			   <span class="icon-home p-d color-bg"><a href="index.html"><i
-						   class="fa-solid fa-house"></i></a></span>
-		   </div>
-	   </div>
-	   <div class="List color-bg">
-		   <div class="container-list">
-			   <div class="del">
-				   <span class=" cursor delete color-text"><i class="fa-solid fa-times"></i></span>
-			   </div>
-			 
-			   <div class="list-ul">
-				   <ul>
-					   <a class="color-text" href="/duan/duan.html">
-						   <li class="p-d">Dự Án </li>
-					   </a>
-					   <a class="color-text" href="/bietthu/TKbietthu.html">
-						   <li class="p-d">Thiết Kế Biệt Thự</li>
-					   </a>
-					   <a class="color-text" href="/kientrucsu/Kientrusu.html">
-						   <li class="p-d">Kiến Trúc Sư</li>
-					   </a>
-					   <a class="color-text" href="/gioithieu/gioithieu.html">
-						   <li class="p-d">Liên Hệ</li>
-					   </a>
-				   </ul>
-			   </div>
 
-		   </div>
-	   </div>
-   </div>
-</div>
-</div> 
+<nav class="main-menu">
+	<div class="image"></div>
+	<ul>
+		<li>
+			<a href="/duan/duan.html">Dự án</a>
+		</li> 
+		<li>
+			<a href="/bietthu/TKbietthu.html">Thiết kế</a>
+		</li>
+		<li>
+			<a href="/kientrucsu/Kientrusu.html">Kiến trúc sư</a>
+		</li>
+		
+		<li>
+			<a href="/gioithieu/gioithieu.html">Liên hệ</a>
+		</li>
+	</ul>
+</nav>
 `
-  header.appendChild(divH)
+let page_header = document.querySelector('.header'),
+				main_menu = page_header.querySelector('.main-menu')
+		page_header.querySelector('.nav-trigger').addEventListener('click', function(e) {
+			if (!main_menu.classList.contains('show')) {
+				// page_header.querySelector('.main-menu').classList.add('show', 'fadeInLeft');
+				page_header.querySelector('.main-menu').className = 'main-menu show fadeInLeft';
+				document.querySelector('body').classList.add('overflow')
+				e.currentTarget.innerHTML = `
+				<i class="fa-solid fa-xmark"></i>
+				<span>Menu</span>
+				`;
+			}
+			else {
+				// page_header.querySelector('.main-menu').classList.add('fadeOutLeft');
+				e.currentTarget.innerHTML = `
+				<i class="fa-solid fa-bars"></i>
+				<span>Menu</span>
+				`;
+				page_header.querySelector('.main-menu').className = 'main-menu show fadeOutLeft';
+				document.querySelector('body').classList.remove('overflow')
+				setTimeout(function() {
+					page_header.querySelector('.main-menu').className = 'main-menu';
+				}, 300)
+			}
+		});
 
 
 
-  function show_Menu (){
-	menu = document.querySelector('.Menu')
-	if(!menu) return false;
-	Main = document.querySelector('main')
-	ShowMenu = document.querySelector('.modal')
-	menu.addEventListener('click', function () {
-		ShowMenu.classList.add('show')
-		ShowMenu.classList.add('fadeInLeft')
-		document.body.classList.add('overflow')
-	});
-	del = document.querySelector('.del span')
-	del.addEventListener('click', function () {
-		// ShowMenu.classList.remove('show')
-		document.body.classList.remove('overflow')
-		ShowMenu.classList.remove('show')
-	});
-}
-show_Menu();
+
+  
+
+
+

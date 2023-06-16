@@ -1,29 +1,30 @@
 .fadeInLeft {
-	animation: fadeInLeft 1.5s;
+	animation: fadeInLeft .4s linear;
 }
 
 .fadeOutLeft {
-	animation: fadeOutLeft 1.5s;
+	animation: fadeOutLeft .4s linear;
 }
 
 @keyframes fadeInLeft {
 	from {
 		opacity: 0;
-		transform: translate(-100%, 0);
+		transform: translate(-5%, 0);
 	}
 	to {
 		opacity: 1;
 		transform: translate(0, 0);
 	}
 }
+
 @keyframes fadeOutLeft {
 	from {
-		opacity: 0;
-		transform: translate(0%, 0);
+		opacity: 1;
+		transform: translate(0, 0);
 	}
 	to {
-		opacity: 1;
-		transform: translate(-100%, 0);
+		opacity: 0;
+		transform: translate(-5%, 0);
 	}
 }
 .item:hover{

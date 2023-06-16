@@ -1,6 +1,134 @@
 
+.grid-templateIMG{
+    grid-template: auto / 1fr ;
+    gap: 30px;
+}
+.item{
+    height: 350px;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+.item p {
+    font-size: 12px;
+}
 
+.margin{
+    margin: 25px;
+}
+.margin_t-l{
+    margin: 20px 0px;
+}
+.icon i {
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.Close a{
+    font-size: 20px;
+}
+.container span p{
+    font-size: 20px;
+}
+.container{
+    margin: 0px 20px;
+}
+.m-b{
+    margin-bottom: 20px;
+}
+.item1 p{
+    font-size: 11px;
+    text-align: center;
+}
+.sendForm {
+    display: block;
+}
+.sendForm button{
+    padding: 10px 30px;
+    width: 100%;
+    margin-top: 10px;
+}
+.flex{
+    display: block;
+    
+}
+.flex input{
+    width: 100%;
+}
+label p{
+    font-size: 11px;
+}
+label{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
 
 @media (min-width: 1200px){
-    
+    .grid-templateIMG{
+        grid-template: auto / 1fr 1fr 1fr ;
+        gap: 30px;
+    }
+    .item{
+        width: 400px;
+        height: 300px;
+        background-size: cover;
+        position: relative;
+        background-position: center;
+    }
+    .item p{
+        font-size: 16px;
+    }
+
+
+
+    .margin{
+        margin: 50px;
+    }
+    .margin_t-l{
+        margin: 50px 0px;
+    }
+    .icon i {
+        color: white;
+        font-size: 32px;
+        margin-right: 10px;
+    }
+    .Close a{
+        font-size: 24px;
+    }
+    .container span p{
+        font-size: 32px;
+    }
+    .container{
+        margin: 0px 50px;
+    }
+    .m-b{
+        margin-bottom: 50px;
+    }
+    .item1 p{
+        font-size: 16px;
+    }
+    .sendForm{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sendForm button{
+        padding: 10px 30px;
+        width: 180px;
+        margin-top: 0px;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex input{
+        width: 400px;
+    }
+    label p{
+        font-size: 16px;
+    }
+    label{
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
 }

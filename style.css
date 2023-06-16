@@ -12,83 +12,6 @@ body{
  body.overflow{
     overflow: hidden;
 }
- /********* header ********/
-
-.cursor{
-    cursor: pointer;
-}
-
-.color-bg{
-    background-color: #333333;
-}
-.color-text{
-    color: #DFB88B;
-}
-.fo-s{
-    font-size: 24px;
-}
-.list-ul ul{
-    padding: 40px 18px 0;
-}
-ul a{
-    font-size: 28px;
-    display: block;
-    margin-bottom: 18px;
-}
-.delete{
-    width: 46px;
-    height: 46px;
-    border: 3px solid #DFB88B;
-    display: inline-flex;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 20px 20px;
-}
-.delete i{
-    font-size: 21px;
-}
-.del{
-    display: flex;
-    justify-content: end;
-}
-header{
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 11;
-
-}
-.container .head{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    background-color: #333333;
-}
-header .container{
-    width: 100%;
-}
-.home{
-    width: 100px;
-}
-.logo{
-    padding-top:100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.btn {   
-    border: 0;
-}
-.m-l{
-    margin-left: 80px;
-}
-.m-r{
-    margin-right: 80px;
-}
-.m-auto{
-    margin: 0 auto;
-}
 .next{
     right: 50px;
     font-size: 48px;
@@ -135,68 +58,15 @@ header .container{
 .slick-slide{
     position: relative;
 }
-
-
-/********* menu show ********/
-
-
-/* menu show left */
-
-.flex{
-    display: flex;
+.cursor{
+    cursor: pointer;
 }
-.close{
-    float: right;
-    margin-right: 10px;
+.m-auto{
+    margin: 0 auto;
 }
-.List{
-    width: 50%;
-   
-}
-
-.text-center{
-    text-align: center;
-}
-ul a{
-    text-decoration: none;
-}
-ul li{
-    list-style: none;
-}
-.p-d{
+ .p-d{
     padding: 20px;
-}
-.Close{
-    margin-top: 50px;
-}
-
-/* menu show right */
-.Background{
-    width: 50%;
-    position: relative;
-}
-.icon-home{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50% );
-    font-size: 40px;
-    border-radius: 50%;
-}
-.icon-home a{
-    color: white;
-}
-.modal{ 
-    display: none;
-}
-.modal.show {
-    display: block;
-}
-
-
-
-/* *****MAIN ******* */
-
+ }
 
 
 /* *****slick ***** */
@@ -328,19 +198,6 @@ ul li{
 footer{
     background-color: #1F0F07;
 }
-.container-footer{
-    color: white;
-    max-width: 90%;
-    margin: 0 auto;
-    display: grid;
-    grid-template: auto / 40% 1fr 1fr 20%;
-    padding: 100px 0px;
-}
-.container-footer-item > p{
-    font-size: 16px;
-    padding-bottom: 20px;
-}
-
 .icon-footer{
     padding: 10px;
     border: 1px solid white;
@@ -396,4 +253,3 @@ footer{
 .itemK-show.showK {
     display: block;
 }
-
