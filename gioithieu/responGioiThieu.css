@@ -31,7 +31,7 @@ font-size: 11px;
     grid-template: auto / 1fr 1fr 1fr;
 }
 .form{
-    max-width: 80%;
+    max-width: 100%;
     margin: 50px auto;
 }
 .form input{

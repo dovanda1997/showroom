@@ -12,16 +12,7 @@ body{
  body.overflow{
     overflow: hidden;
 }
-.next{
-    right: 50px;
-    font-size: 48px;
-    color: white;
-}
-.prev{
-    left: 50px;
-    font-size: 48px;
-    color: white;
-}
+
 	
 .overlay {
     position: fixed;
@@ -42,17 +33,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.popup .content {
-    position: relative;
-    z-index: 1111;
-    border-radius: 16px;
-    padding: 16px;
-    width: 600px;
-    height: 400px;
-    background: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
-    background-size: cover;
 }
 
 .slick-slide{
@@ -125,6 +105,7 @@ body{
 .color-background{
     background-image: url(/image/backG.jpg);
     background-size: cover;
+    background-position: center;
 }
 
  /******** sdile slick *******/
@@ -144,47 +125,21 @@ body{
     width: 60%;
     margin: 50% auto;
 }
-.tex{
-    max-width: 40%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-.imgShowrom{
-    width: 80%;
-    height: 750px;
-    background-size: cover;
-   
-}
 
 
 /* *********sample***** */
- .sample{
-    width: 1120px;
-    margin: 50px auto;
-    display: flex;
-    justify-content: space-between;
-    
-}
-.sample-item{
-    width: 360px;
-    height: 500px;
-    border: 1px solid #7A7A7A;
- }
+
+
  .sample-item_img {
     width: 100%;
     height: 50%;
-    background-size: cover; 
+    background-size: cover;
+    background-position: center; 
  }
 .sample-item-text p {
     padding: 20px 0px;
 }
-.sample-item-text a{
-    text-decoration: none;
-    color: black;
-}
+
 .btnSample{
     padding: 10px 30px;
     border: 0;
@@ -192,6 +147,11 @@ body{
     background-color: #F1EADA;
     border-radius: 50px;
 }
+.btnSample:hover{
+    background-color: #D4B88B;
+    color: rgb(201, 128, 33);
+}
+
 
 /********** footer *********/
 
@@ -230,8 +190,6 @@ footer{
     text-decoration: none;
 }
 .showVideo{
-    width: 800px;
-    height: 400px;
     background-color: white;
     position: absolute;
     left: 50%;

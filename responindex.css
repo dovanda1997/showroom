@@ -28,14 +28,111 @@
 .DG-item{
     width: 100%;
     background-size: cover;
-    padding-top: 100%;
+    height: 430px;
+    background-position: center;
 }
+.next{
+    right: 15px;
+    font-size: 25px;
+    color: white;
+}
+.prev{
+    left: 15px;
+    font-size: 25px;
+    color: white;
+}
+.showVideo{
+    width: 80%;
+    height: 280px;
+}
+.del{
+    text-align: end;
+    padding: 20px;
+}
+.mediaVIDEO{
+    display: grid;
+    grid-template: auto/ 1fr ;
+    gap: 20px;
+}
+.media{
+    display: grid;
+    grid-template: auto / 1fr;
+}
+.mediaBack{
+    display: grid;
+}
+.imgShowrom{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+.tex{
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+}
+.tex-title{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.tex-head{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.tex-content{
+    font-size: 12px;
+}
+.popup .content {
+    position: relative;
+    z-index: 1111;
+    border-radius: 16px;
+    padding: 16px;
+    width: 80%;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+    background-size: cover;
+    background-position: center;
+}
+.sample{
+    display: block;
+    width: 90%;
+    margin: 50px auto;
+}
+.sample-item{
+    width: 100%;
+    height: 500px;
+    border: 1px solid #7A7A7A;
+    margin-bottom: 50px;
+ }
+ .sample-item-text a{
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    font-weight: 600;
+}
+.sample-content{
+    font-size: 11px;
+}
+    
+
 
 
 
 
 
 @media (min-width: 1200px){
+    .media{
+        display: grid;
+        grid-template: auto / 1fr 1fr;
+    }
+    .mediaBack{
+        display: grid;
+        grid-template: auto / 1fr 1fr;
+    }
     
     .baner img{
         width: 100%;
@@ -58,6 +155,11 @@
     .txt-p{
         font-size: 14px;
     }
+    .mediaVIDEO{
+        display: grid;
+        grid-template: auto/ 1fr 1fr ;
+        gap: 20px;
+    }
     .item{
         width: 400px;
         height: 250px;
@@ -66,9 +168,84 @@
     }
     .DG-item{
         background-size: cover;
+        height: 430px;
+        background-position: center;
     }
-    .DG-img{
+    .del{
+        text-align: end;
+        padding: 20px;
+    }
+    .showVideo{
+        width: 70%;
+        height: 400px;
+    }
+    .next{
+        right: 50px;
+        font-size: 48px;
+        color: white;
+    }
+    .prev{
+        left: 50px;
+        font-size: 48px;
+        color: white;
+    }
+    .imgShowrom{
+        width: 80%;
+        height: 750px;
+        background-size: cover;
+    }
+    .tex{
+        max-width: 40%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    .tex-title{
+        font-size: 24px;
+    }
+    .tex-head{
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    .tex-content{
+        font-size: 16px;
+    }
+    .popup .content {
+        position: relative;
+        z-index: 1111;
+        border-radius: 16px;
+        padding: 16px;
+        width: 70%;
+        height: 400px;
+        background: #fff;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+        background-size: cover;
+        background-position: center;
+    }
+    .sample{
+        width: 1120px;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .sample-item{
+        width: 32%;
         height: 500px;
+        border: 1px solid #7A7A7A;
+        margin-bottom: 0px;
+     }
+     .sample-item-text a{
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
     }
+    .sample-content{
+        font-size: 14px;
+    }
+    
+    
+   
 
 }
