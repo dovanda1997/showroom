@@ -1,15 +1,6 @@
 
 
-// SLICK js
-$('.autoplay').slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	autoplay: true,
-	autoplaySpeed: 1000,
-	prevArrow: '<span class="cursor fa fa-angle-left prev"></span>',
-	nextArrow: '<span class="cursor fa fa-angle-right next"></span>'
 
-});
 
 /* ---------------------------------------------------- */
 /* start new code */
@@ -123,3 +114,13 @@ hander_video()
 
 // apen chill vafo body
 // slick-track class clone
+// SLICK js
+$('.autoplay').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	autoplay: true,
+	autoplaySpeed: 1000,
+	prevArrow: '<span class="cursor fa fa-angle-left prev"></span>',
+	nextArrow: '<span class="cursor fa fa-angle-right next"></span>'
+
+});
