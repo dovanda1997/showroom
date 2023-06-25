@@ -4,7 +4,7 @@
     max-width: 80%;
 }
 .KT-img{
-    height: 200px;
+    /* height: 200px; */
     background-color: brown;
     width: 100%;
 }
@@ -33,7 +33,7 @@
 }
 .img_profile{
     background-position: center;
-    padding-top: 95%;
+    padding-top: 100%;
     background-size: cover;
 }
 
@@ -101,7 +101,7 @@
    border: 1px solid #A0A0A0;
 }
 .KT-img{
-    height: 250px;
+    /* height: 250px; */
     background-color: brown;
 }
 .KT-heading{
@@ -109,7 +109,7 @@
 }
 .img_profile{
     background-position: center;
-    padding-top: 95%;
+    padding-top: 100%;
     background-size: cover;
 }
 }

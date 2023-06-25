@@ -25,11 +25,11 @@ let data = [
 
  function render (param){
      for(let item of param){
-          let imgf = document.querySelector('.KT-item')
+          let imgf = document.querySelector('.KT-item .media')
         let div = document.createElement('div')
-        div.className = 'containerKT ored-item  media grid-gap'
+        div.classList.add('KT-item-use') 
         div.innerHTML =`
-        <div class="KT-item-use">
+        
         <div class="KT-img" >
             <div class="img_profile" style="  background-image: url(/image/chandung2.jpg);"></div>
         </div>
@@ -37,7 +37,7 @@ let data = [
             <p style="padding-top: 10px;" >KTS:${item.name}</p>
             <P>${item.work}</P>
         </div>
-         </div>
+         
         `
         console.log(div)
         imgf.appendChild(div)

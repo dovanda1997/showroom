@@ -9,8 +9,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    
     color: white;
     z-index: 111;
+    text-align: center;
+    width: 100%;
  }
  .txt-h2{
     font-size: 24px;
@@ -21,9 +24,10 @@
 }
 .item{
     max-width: 100%;
-    height: 150px;
+    height: 170px;
     background-size: cover;
     border-radius: 20px;
+    background-position: center;
 }
 .DG-item{
     width: 100%;
@@ -71,7 +75,8 @@
     max-width: 100%;
     position: absolute;
     left: 50%;
-    transform: translate(-50%);
+    top: -10%;
+    transform: translate(-50%, 10%);
     color: white;
 }
 .tex-title{

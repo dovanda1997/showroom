@@ -33,6 +33,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 111;
 }
 
 .slick-slide{
@@ -178,7 +179,10 @@ footer{
 }
 
 .video{
-    padding: 10px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 1px solid #7A7A7A;
+    background-color: #F1EADA;
 }
 .DG-Vision{
     position: relative;

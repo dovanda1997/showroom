@@ -52,7 +52,16 @@ function create_popup_home_slider() {
 		// autoplay: true,
 		// autoplaySpeed: 1500,
 		prevArrow: '<span class="cursor fa fa-angle-left prev"></span>',
-		nextArrow: '<span class="cursor fa fa-angle-right next"></span>'
+		nextArrow: '<span class="cursor fa fa-angle-right next"></span>',
+		responsive: [{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				infinite: true,
+			  }
+		}
+		]
 	});
 
 	document.querySelectorAll('.multiple-items .itemK').forEach(function (item) {

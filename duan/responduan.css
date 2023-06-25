@@ -69,8 +69,6 @@ label{
         gap: 30px;
     }
     .item{
-        width: 400px;
-        height: 300px;
         background-size: cover;
         position: relative;
         background-position: center;
@@ -78,9 +76,6 @@ label{
     .item p{
         font-size: 16px;
     }
-
-
-
     .margin{
         margin: 50px;
     }
@@ -118,11 +113,13 @@ label{
         margin-top: 0px;
     }
     .flex{
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template: auto/ 1fr 1fr 1fr;
+        gap: 20px;
+        
     }
     .flex input{
-        width: 400px;
+        /* width: 400px; */
     }
     label p{
         font-size: 16px;
