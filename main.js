@@ -8,22 +8,22 @@
 
 let slide_item = {
 	0: {
-		img: '/image/sdile1.jpg'
+		img: './image/sdile1.jpg'
 	},
 	1: {
-		img: '/image/sdile2.jpg'
+		img: './image/sdile2.jpg'
 	},
 	2: {
-		img: '/image/sdile3.jpg'
+		img: './image/sdile3.jpg'
 	},
 	3: {
-		img: '/image/sdile4.jpg'
+		img: './image/sdile4.jpg'
 	},
 	4: {
-		img: '/image/sdile5.jpg'
+		img: './image/sdile5.jpg'
 	},
 	5: {
-		img: '/image/sdile6.jpg'
+		img: './image/sdile6.jpg'
 	}
 };
 

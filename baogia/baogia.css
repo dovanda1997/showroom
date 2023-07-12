@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #1F0F07;
+    color: #D4B88B;
+    font-family: sans-serif;
+}
+main{
+    position: relative;
+}
+button{
+    cursor: pointer;
+}
+p{
+    font-size: 20px;
+}
+.header .container{
+    display: block;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 30px;
+}
+.project_name_id{
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+.infomation_product-content{
+    position: relative;
+}
+.btn{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0 );
+}
+button{
+    padding: 20px 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: bisque;
+    color: #1F0F07;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.item{
+    border: 1px solid #423E35;
+    padding: 0 20px;
+    border-radius: 20px;
+}
+.item_head{  
+    padding: 20px 0px;
+}  
+.item_head h2{
+    font-size: 32px;
+}
+.item_head p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+ul li{
+    padding: 15px;
+    border-bottom: 1px solid ;
+    list-style: none;
+}
+.Add_Cart{
+    text-align: center;
+    margin-top: 20px;
+}
+.cart_input button{
+    padding: 15px;
+}
+.dis-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart_infomation{
+    padding: 20px;
+    border: 1px solid #423E35;
+    border-radius: 20px;
+    margin-top: 20px;
+
+}
+.project_name_id h1{
+    font-size: 32px;
+    margin-left: 50px;
+    font-weight: 100;
+    color: white;
+}
+.infomation_product-content h2{
+    font-size: 32px;
+}
+.container a{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+}
+.del{
+    padding: 15px;
+    margin-left:10px ;
+}
+
+.form input{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    background-color: black;
+    
+}
+.form-infomation input{
+    width: 100%;
+}
+.form button{
+    width: 100%;
+   padding: 10px;
+   margin: 30px 0px;
+}
+
+.form.show{
+    display: block;
+}
+label{
+    color: white;
+}
+.form p{
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form-infomation{
+    display: flex;
+    justify-content: space-between;
+}
+textarea{
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    background-color: black;
+}
+.LH-heading{
+    width: 85%;
+    margin: 30px 0px;
+    letter-spacing: 3px;
+    color: white;
+}
+.delete button{
+    padding: 10px;
+    width: 30px;
+    justify-content: flex-end;
+    display: flex;
+}
