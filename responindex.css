@@ -47,7 +47,6 @@
 }
 .showVideo{
     width: 80%;
-    height: 280px;
 }
 .del{
     text-align: end;
@@ -182,7 +181,7 @@
     }
     .showVideo{
         width: 70%;
-        height: 400px;
+        
     }
     .next{
         right: 50px;
