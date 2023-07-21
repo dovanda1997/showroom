@@ -60,7 +60,7 @@ a {
 /* menu show left */
 .header .main-menu .image {
 	display: none;
-	background-image: url(/image/backMenu.jpg);
+	background-image: url(./image/backMenu.jpg);
 	background-size: cover;
 	background-position: center;
 }
