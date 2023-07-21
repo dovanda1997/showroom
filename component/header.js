@@ -7,7 +7,7 @@ header.innerHTML=`
 		<i class="fa-solid fa-bars"></i>
 		<span>Menu</span>
 	</button>
-	<a href="./index.html" class="logo"><img src="./image/logo-donggia-gold.png"></a>
+	<a href="./index.html" class="logo"><img src="/image/logo-donggia-gold.png"></a>
 	<button class="projects">
 		<span><a href="./duan/duan.html">Dự án</a></span>
 		<i class="fa-solid fa-ellipsis-vertical"></i>
