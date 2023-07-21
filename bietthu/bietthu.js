@@ -31,19 +31,19 @@ showVideoTK.forEach(e => {
 
 let itemtk = [
     {
-        img: '/image/BTmodel1.jpg',
+        img: '../image/BTmodel1.jpg',
         heading: 'THIẾT KẾ NỘI THẤT BIỆT THỰ VINHOMES RIVERSIDE'
     },
     {
-        img: '/image/BTmodel2.jpg',
+        img: '../image/BTmodel2.jpg',
         heading: 'THIẾT KẾ NỘI THẤT BIỆT THỰ VINHOMES GREEN BAY'
     },
     {
-        img: '/image/BTmodel3.jpg',
+        img: '../image/BTmodel3.jpg',
         heading: 'THIẾT KẾ NỘI THẤT BIỆT THỰ TẠI HẢI PHÒNG'
     },
     {
-        img: '/image/BTmodel4.jpg',
+        img: '../image/BTmodel4.jpg',
         heading: 'THIẾT KẾ NỘI THẤT BIỆT THỰ TẠI THÁI NGUYÊN'
     }
 ]
@@ -117,19 +117,19 @@ render_slideeee(itemtk);
 
 let iteS = [
     {
-        img: '/image/BTphongkhach.jpg',
+        img: '../image/BTphongkhach.jpg',
         heading: 'NỘI THẤT PHÒNG KHÁCH'
     },
     {
-        img: '/image/BTphongbep.jpg',
+        img: '../image/BTphongbep.jpg',
         heading: 'NỘI THẤT PHÒNG BẾP'
     },
     {
-        img: '/image/BTphongan.jpg',
+        img: '../image/BTphongan.jpg',
         heading: 'NỘI THẤT PHÒNG ĂN'
     },
     {
-        img: '/image/BTphongngu.jpg',
+        img: '../image/BTphongngu.jpg',
         heading: 'NỘI THẤT PHÒNG NGỦ'
     }
 ]

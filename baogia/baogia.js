@@ -20,7 +20,7 @@ if (product_id == 1) {
      <section>
     <div class="header">
         <div class="container">
-            <a href="/duan/duan.html">Back</a>
+            <a href="../duan/duan.html">Back</a>
         </div>
     </div>
     <div class="project_name_id">
@@ -206,7 +206,7 @@ if (product_id == 3) {
      <section>
     <div class="header">
         <div class="container">
-            <a href="/duan/duan.html">Back</a>
+            <a href="../duan/duan.html">Back</a>
         </div>
     </div>
     <div class="project_name_id">

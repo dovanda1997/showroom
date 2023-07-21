@@ -2,7 +2,7 @@ let product = [
   {
     id: 1,
     name: "Thiết kế biệt thự",
-    img:'/image/BTgirl1.jpg',
+    img:'../image/BTgirl1.jpg',
     Dichvu:[
        {
         nameD:"Dịch vụ 1",
@@ -48,7 +48,7 @@ let product = [
   {
     id: 2,
     name: "Thiết kế chung cư",
-    img:'/image/BTgirl2.jpg',
+    img:'../image/BTgirl2.jpg',
     Dichvu:[
       {
         nameD:"Dịch vụ 1",
@@ -92,7 +92,7 @@ let product = [
   {
     id: 3,
     name: "Thiết kế biệt khác",
-    img:'/image/BTgirl3.jpg',
+    img:'../image/BTgirl3.jpg',
     Dichvu:[
       {
         nameD:"Dịch vụ 1",
@@ -129,7 +129,7 @@ let product = [
 function render_produt(param) {
   for (let  product of param) {
     let div = document.createElement('a')
-    div.setAttribute('href', '/baogia/baogia.html')
+    div.setAttribute('href', '../baogia/baogia.html')
     div.classList.add('item')
     div.style.cssText = `background-image: url(${product.img})`
     div.innerHTML = `
