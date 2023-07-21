@@ -31,7 +31,7 @@ let data = [
         div.innerHTML =`
         
         <div class="KT-img" >
-            <div class="img_profile" style="  background-image: url(/image/chandung2.jpg);"></div>
+            <div class="img_profile" style="  background-image: url(../image/chandung2.jpg);"></div>
         </div>
         <div class="KT-heading">
             <p style="padding-top: 10px;" >KTS:${item.name}</p>
