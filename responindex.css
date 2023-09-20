@@ -20,7 +20,7 @@
     letter-spacing: 5px;
 }
 .txt-p{
-    font-size: 11px;
+    font-size: 16px;
 }
 .item{
     max-width: 100%;
@@ -115,13 +115,16 @@
  .sample-item-text a{
     text-decoration: none;
     color: black;
-    font-size: 11px;
+    font-size: 20px;
     font-weight: 600;
 }
 .sample-content{
     font-size: 11px;
 }
-    
+
+.text-with{
+    max-width: 97%;
+}
 
 
 
@@ -129,6 +132,9 @@
 
 
 @media (min-width: 1200px){
+    .text-with{
+        max-width: 60%;
+    }
     .media{
         display: grid;
         grid-template: auto / 1fr 1fr;
@@ -143,7 +149,7 @@
         height: 500px;
     }
     .baner h2{
-       font-size: 32px;
+       font-size: 42px;
        top:50%;
        left: 50%;
        transform: translate(-50%, -50%);
@@ -157,7 +163,7 @@
         letter-spacing: 5px;
     }
     .txt-p{
-        font-size: 14px;
+        font-size: 20px;
     }
     .mediaVIDEO{
         display: grid;
@@ -207,14 +213,14 @@
         color: white;
     }
     .tex-title{
-        font-size: 24px;
+        font-size: 32px;
     }
     .tex-head{
-        font-size: 16px;
+        font-size: 19px;
         padding-bottom: 20px;
     }
     .tex-content{
-        font-size: 16px;
+        font-size: 20px;
     }
     .popup .content {
         position: relative;
@@ -229,7 +235,7 @@
         background-position: center;
     }
     .sample{
-        width: 1120px;
+        max-width: 90%;
         margin: 50px auto;
         display: flex;
         justify-content: space-between;
@@ -243,7 +249,7 @@
      .sample-item-text a{
         text-decoration: none;
         color: black;
-        font-size: 16px;
+        font-size: 24px;
     }
     .sample-content{
         font-size: 14px;

@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    line-height: 32px;
 }
 html,
 body{
@@ -67,9 +68,7 @@ body{
 
 /* ********text content********** */
 
-.text {  
-    max-width: 95%;
-}
+
 
 .txt-center{
     text-align: center;
@@ -138,11 +137,12 @@ body{
     background-position: center; 
  }
 .sample-item-text p {
-    padding: 20px 0px;
+   
+    font-size: 16px;
 }
 
 .btnSample{
-    padding: 10px 30px;
+    padding: 10px 70px;
     border: 0;
     border: 1px solid #7A7A7A;
     background-color: #F1EADA;

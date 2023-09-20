@@ -10,6 +10,9 @@ button,
 a {
 	cursor: pointer;
 }
+i{
+	font-size: 32px;
+}
 .container {
 	display: block;
 	width: 100%;
@@ -84,6 +87,9 @@ a {
 a{
 	color: #DFB88B;
 	text-decoration: none;
+}
+ span{
+	font-size: 32px;
 }
 
 

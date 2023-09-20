@@ -10,7 +10,7 @@
     background-position: center;
 }
 .item p {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .margin{
@@ -28,7 +28,7 @@
     font-size: 20px;
 }
 .container span p{
-    font-size: 20px;
+    font-size: 24px;
 }
 .container{
     margin: 0px 20px;
@@ -37,7 +37,7 @@
     margin-bottom: 20px;
 }
 .item1 p{
-    font-size: 11px;
+    font-size: 16px;
     text-align: center;
 }
 .sendForm {
@@ -74,7 +74,7 @@ label{
         background-position: center;
     }
     .item p{
-        font-size: 16px;
+        font-size: 24px;
     }
     .margin{
         margin: 50px;
@@ -100,7 +100,7 @@ label{
         margin-bottom: 50px;
     }
     .item1 p{
-        font-size: 16px;
+        font-size: 20px;
     }
     .sendForm{
         display: flex;

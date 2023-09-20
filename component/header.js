@@ -10,7 +10,6 @@ header.innerHTML=`
 	<a href="./index.html" class="logo"><img src="./image/logo-donggia-gold.png"></a>
 	<button class="projects">
 		<span><a href="./duan/duan.html">Dự án</a></span>
-		<i class="fa-solid fa-ellipsis-vertical"></i>
 	</button>
 </div>
 
