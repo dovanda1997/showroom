@@ -7,7 +7,7 @@ header.innerHTML=`
 		<i class="fa-solid fa-bars"></i>
 		<span>Menu</span>
 	</button>
-	<a href="./index.html" class="logo"><img src="./image/logo-donggia-gold.png"></a>
+	<a href="../index.html" class="logo"><img src="../image/logo-donggia-gold.png"></a>
 	<button class="projects">
 		<span><a href="./duan/duan.html">Dự án</a></span>
 		<i class="fa-solid fa-ellipsis-vertical"></i>
@@ -18,13 +18,13 @@ header.innerHTML=`
 	<div class="image"></div>
 	<ul>
 		<li>
-			<a href="./duan/duan.html">Dự án</a>
+			<a href="../duan/duan.html">Dự án</a>
 		</li> 
 		<li>
-			<a href="./bietthu/TKbietthu.html">Thiết kế</a>
+			<a href="../bietthu/TKbietthu.html">Thiết kế</a>
 		</li>
 		<li>
-			<a href="./kientrucsu/Kientrusu.html">Kiến trúc sư</a>
+			<a href="../kientrucsu/Kientrusu.html">Kiến trúc sư</a>
 		</li>
 		
 		<li>
